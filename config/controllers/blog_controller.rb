@@ -1,4 +1,4 @@
-class JekyllOnRails::ArticlesController < ApplicationController
+class JekyllOnRails::BlogController < ApplicationController
   def index
     @articles = JekyllOnRails::Article.all
   end

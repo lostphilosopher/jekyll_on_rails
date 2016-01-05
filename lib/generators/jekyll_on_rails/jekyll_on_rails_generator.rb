@@ -11,6 +11,7 @@ module JekyllOnRails
         Dir.mkdir('app/views/blog') unless Dir.exist?('app/views/blog')
         Dir.mkdir('app/views/blog/published') unless Dir.exist?('app/views/blog/published')
         copy_file("../../../config/views/index.html.haml", "app/views/blog/index.html.haml") unless File.exist?('app/views/blog/index.html.haml')
+        copy_file("../../../config/controllers/blog_controller.rb", "app/controllers/blog_controller.rb") unless File.exist?('app/controllers/blog_controller.rb')
       end
     end
   end
