@@ -10,6 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["wandersen02@gmail.com"]
 
   spec.summary       = %q{Add a Jeyll Blog to your rails project.}
+  spec.description   = %q{Add a Jeyll Blog to your rails project based on https://exceptiontrap.com/blog/4-create-a-simple-jekyll-like-blog-in-your-rails-4-app.}
   spec.homepage      = 'https://github.com/lostphilosopher/jekyll_on_rails'
   spec.license       = "MIT"
 
@@ -30,8 +31,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
 
   # Gem specific dependencies
-  spec.add_runtime_dependency "jekyll", "~> 3.0.1"
-  spec.add_runtime_dependency "activemodel", "~> 4.2.5"
-  spec.add_runtime_dependency "redcarpet", "~> 3.3.4"
+  spec.add_runtime_dependency "jekyll"
+  spec.add_runtime_dependency "activemodel"
+  spec.add_runtime_dependency "redcarpet"
   spec.add_runtime_dependency "pygments.rb"
+  spec.add_runtime_dependency "railties"
 end
