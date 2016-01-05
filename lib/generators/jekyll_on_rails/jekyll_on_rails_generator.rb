@@ -10,6 +10,7 @@ module JekyllOnRails
       def create_directories
         Dir.mkdir('app/views/blog') unless Dir.exist?('app/views/blog')
         Dir.mkdir('app/views/blog/published') unless Dir.exist?('app/views/blog/published')
+        copy_file("../../../config/views/index.html.haml", "app/views/blog/index.html.haml") unless File.exist?('app/views/blog/index.html.haml')
       end
     end
   end
